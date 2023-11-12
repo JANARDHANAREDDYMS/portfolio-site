@@ -6,7 +6,9 @@ export const theme = {
         white:'#fff',
         black:'#000',
         para_text_color:'#dcdcdc',
-        orange:'#FF5733'
+        orange:'#FF5733',
+        gray: '#808080',
+        brownish_yellow: '#BAB178'
     },
     fonts: {
         family: 'sans-serif', 

@@ -6,9 +6,9 @@ export const ShowcaseParticleContainer = styled.div`
 `
 
 export const ShowcaseImageCard = styled.div`
-    border: 6px solid white;
+    border: 7px solid white;
     width: max-content;
-    
+    height:98%;
     border-radius: 4rem;
     position: relative;
     overflow:hidden;
@@ -17,8 +17,25 @@ export const ShowcaseImageCard = styled.div`
         width: 300px; // Set the desired width
         height: auto; // Set height to "auto" to maintain aspect ratio
     }
-`
 
+
+   
+`;
+
+ 
+
+// export const ShowcaseImgCard = styled.div`
+//     border: 11px solid #BAB178;
+//     width: max-content;
+//     object-fit: cover;
+//     height: 98%;
+//     border-radius: 0px;
+
+//     img {
+//         width: 300px; // Set the desired width
+//         height: auto; // Set height to "auto" to maintain aspect ratio
+//     }
+// `
 
 export const Particle = styled.img`
     position:absolute;
@@ -27,6 +44,11 @@ export const Particle = styled.img`
     right:${({right})=>right};
     bottom:${({bottom})=>bottom};
     transform: rotate(${({rotate})=>rotate});
-
-
 `
+
+// export const diamond = styled.div`
+//     width: 50px;
+//     height: 50px;
+//     background-color:${({theme})=>theme.colors.brownish_yellow},\;
+//     transform: [{ rotate: "45deg" }];
+// `

@@ -22,7 +22,7 @@ const MySkills = ()=>{
     return(
             <PaddingContainer
             id="Skills"
-            top="10%"
+            top="5%"
             bottom="10%">
                 <FlexContainer fullWidthChild>
                     <SkillsCardContainer>

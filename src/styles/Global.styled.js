@@ -51,8 +51,9 @@ export const Heading = styled(PaddingContainer)`
             default:
                 return;
         }
-    }}
-`
+    }};
+    font-family: Outfit, sans-serif;
+`;
 
 export const BlueText =  styled.span`
     color:${({theme})=>theme.colors.secondary}
@@ -81,4 +82,37 @@ export const IconContainer = styled.div`
                 return
         }
     }}
+`
+
+export const Button = styled.a`
+    display: inline-block;
+    width: max_content;
+    padding: 1rem 2rem;
+    color:${({theme})=>theme.colors.white};
+    background-color:${({theme})=>theme.colors.primary_light};
+    border: 1px solid ${({theme})=>theme.colors.brownish_yellow};
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+    
+    &:hover{
+        color:${({theme})=>theme.colors.primary_light};
+        background-color:${({theme})=>theme.colors.white};
+    }
+`
+export const ButtonMes = styled.a`
+    display: inline-block;
+    width: max_content;
+    padding: 1rem 2rem;
+    color:${({theme})=>theme.colors.white};
+    background-color:${({theme})=>theme.colors.brownish_yellow};
+    border: 1px solid ${({theme})=>theme.colors.brownish_yellow};
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+    
+    &:hover{
+        color:${({theme})=>theme.colors.primary_light};
+        background-color:${({theme})=>theme.colors.white};
+    }
 `

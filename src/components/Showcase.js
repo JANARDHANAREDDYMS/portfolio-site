@@ -13,12 +13,13 @@ import {
 
 //importing showcase styles
 
-import { ShowcaseParticleContainer, ShowcaseImageCard,
-Particle } from "../styles/Showcase.styled";
+import { ShowcaseParticleContainer, ShowcaseImageCard, ShowcaseImgCard,
+Particle, diamond } from "../styles/Showcase.styled";
 
 import { BsLinkedin, BsFacebook, BsTwitter, BsInstagram, BsGithub }
 from "react-icons/bs";
-
+import { MdDownloadForOffline} from 'react-icons/md'
+import { GiCutDiamond } from "react-icons/gi";
 
 import  ShowcaseImg  from  "../assets/showcase-img.jpg"
 import BackgroundImg from "../assets/particle.png"
@@ -30,7 +31,7 @@ const Showcase = () =>{
            id="Home"
            left="13%"
            right="10%"
-           top="10%"
+           top="12%"
            bottom="10%"
            >
             <FlexContainer align="left" fullWidthChild>
@@ -92,11 +93,22 @@ const Showcase = () =>{
                         </IconContainer>
                     </FlexContainer>
 
-
+                    <PaddingContainer top="1.5rem">
+                        <FlexContainer>
+                        <Heading as="h3" size="h3">
+                        R<BlueText>es</BlueText>ume
+                        </Heading>
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                        <IconContainer color="blue" size="1.8rem">
+                            <MdDownloadForOffline />
+                        </IconContainer>
+                        </PaddingContainer>
+                        
                     
-                
+                        </FlexContainer>
+                    </PaddingContainer>
                     
-
+                    
                 </div>
 
                 <FlexContainer justify="end" paddingBottom="28rem">
@@ -123,7 +135,11 @@ const Showcase = () =>{
 
                             
                         </ShowcaseParticleContainer>
+
+                        
                     </FlexContainer>
+
+                    
             </FlexContainer>
         </PaddingContainer>
     )
