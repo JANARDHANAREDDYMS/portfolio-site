@@ -70,7 +70,7 @@ const Showcase = () =>{
                             <BlueText>A passionate MERN developer, with interest in pursuit of</BlueText>
                         </p>
                         <p style={{ paddingRight: "13rem" }}>
-                            <BlueText>interest in deep learning.</BlueText>
+                            <BlueText>deep learning.</BlueText>
                         </p>
                     </ParaText>
 
