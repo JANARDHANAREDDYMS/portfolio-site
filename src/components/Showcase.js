@@ -133,10 +133,14 @@ const Showcase = () =>{
                             left="1100px"
                             rotate="0deg"/>
 
+                        <Particle
+                        src={BackgroundImg}
+                        alt="partcile"
+                        top="35px"
+                        left="1150px"
+                        rotate="30deg"/>
                             
                         </ShowcaseParticleContainer>
-
-                        
                     </FlexContainer>
 
                     
