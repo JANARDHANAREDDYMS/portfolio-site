@@ -139,7 +139,14 @@ const Showcase = () =>{
                         top="35px"
                         left="1150px"
                         rotate="30deg"/>
-                            
+
+                            <Particle
+                            src={ReactImg}
+                            alt="particle"
+                            top="55px"
+                            width="60px"
+                            left="1050px"
+                            rotate="120deg"/>
                         </ShowcaseParticleContainer>
                     </FlexContainer>
 
