@@ -15,6 +15,15 @@ export const PaddingContainer = styled.div`
     padding-bottom: ${({ bottom }) => bottom };
     padding-left: ${({ left }) => left };
     padding-right: ${({ right }) => right };
+
+    @media(max-width: ${({theme})=>theme.breakpoints.
+    mobile}){
+        padding-top: ${({ responsiveTop }) => responsiveTop };
+        padding-bottom: ${({ responsiveBottom }) => responsiveBottom };
+        padding-left: ${({ responsiveLeft }) => responsiveLeft };
+        padding-right: ${({ responsiveRight }) => responsiveRight }; 
+        
+    }
 `;
 
 
@@ -28,6 +37,15 @@ export const FlexContainer = styled.div`
     & > div {
         flex: ${({ fullWidthChild }) => fullWidthChild && 1};
     }
+
+    @media(max-width: ${({theme})=>theme.breakpoints.
+    mobile}){
+        display: ${({responsiveFlex})=>responsiveFlex};
+        responsiveFlex? 'flex' : 'block'};
+
+        flex-direction: ${({responsiveDirection})=>responsiveDirection};
+    }
+
 `;
 
 
@@ -53,6 +71,26 @@ export const Heading = styled(PaddingContainer)`
         }
     }};
     font-family: Outfit, sans-serif;
+
+    @media(max-width:${({theme})=>theme.breakpoints.
+mobile}){
+    font-size: ${({size})=>{
+        switch(size){
+            case 'h1':
+                return '2.5rem';
+            case 'h2':
+                return '2rem';
+            case 'h3':
+                return '1.5rem';
+            case 'h4':
+                return '0.8rem'
+
+            default:
+                return;
+        }
+    }};
+    font-family: Outfit, sans-serif;
+}
 `;
 
 export const BlueText =  styled.span`

@@ -63,7 +63,7 @@ const Footer = () => {
                         </PaddingContainer>
 
                         <PaddingContainer>
-                            <Heading as="h4" size="h4">
+                            <Heading as="h5" size="h5">
                                 This site is developed and maintained by<BlueText>Janardhana Reddy M S,</BlueText>
                             can be reached out in case of any problems</Heading>
                         </PaddingContainer>

@@ -42,7 +42,7 @@ const  Navbar = () => {
             top='1.2rem'
             bottom='1.2rem'>
                 <Container>
-                    <FlexContainer justify="flex-end">
+                    <FlexContainer justify="flex-end" responsiveFlex>
                         {/* <Logo>
                             NavBar
                         </Logo> */}

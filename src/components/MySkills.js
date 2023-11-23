@@ -23,8 +23,14 @@ const MySkills = ()=>{
             <PaddingContainer
             id="Skills"
             top="5%"
-            bottom="10%">
-                <FlexContainer fullWidthChild>
+            bottom="10%"
+            responsiveLeft="1rem"
+            responsiveRight="1rem"
+            >
+                <FlexContainer 
+                responsiveFlex
+                resposive-direction="column-reverse"
+                fullWidthChild>
                     <SkillsCardContainer>
                         {Skills.map((skill)=>(
                             <SkillsCard>
