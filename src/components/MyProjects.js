@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 
 import {
     PaddingContainer,
@@ -9,6 +9,7 @@ import {
 
 import { projectDetails } from "../utils/Data";
 import Project from "./layouts/Project";
+import { fadeInLeftVariant,fadeInRightVariant,fadeOutLeftVariant,fadeOutRightVariant,fadeInTopVariant,fadeOutLeft1Variant } from "../utils/Variants";
 
 
 const MyProjects = () =>{
@@ -17,17 +18,34 @@ const MyProjects = () =>{
         id="Projects"
         top="5%"
         bottom="5%"
-        left="5%">
-            <Heading as="h2" size="h2">
-                My Projects
+        left="4%"
+        right="2%"
+        responsiveLeft="1rem"
+        responsiveRight="1rem"
+        responsiveTop="10%">
+            <Heading 
+            as={motion.h4}
+            variants={fadeInTopVariant}
+            initial="hidden"
+            whileInView="visible"
+            size="h4"
+            >
+            My Projects
             </Heading>
 
-            <Heading as="h2" size="h2">
+            <Heading as={motion.h2}
+            variants={fadeInTopVariant}
+            initial="hidden"
+            whileInView="visible"
+            size="h2">
                 What<BlueText> I have Built</BlueText>
             </Heading>
 
             {projectDetails.map((project)=>(
-                <PaddingContainer key={project.id} top="5rem" bottom="5rem">
+                <PaddingContainer 
+                
+            
+            key={project.id} top="5rem" bottom="5rem">
                     <Project data={project} />
                 </PaddingContainer>
             ))}

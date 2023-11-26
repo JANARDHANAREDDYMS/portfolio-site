@@ -1,5 +1,6 @@
 import React from "react";
 import theme from "../utils/Theme";
+import { motion } from "framer-motion";
 
 //import global styles
 import {
@@ -25,6 +26,9 @@ import  ShowcaseImg  from  "../assets/showcase-img.jpg"
 import BackgroundImg from "../assets/particle.png"
 import ReactImg from "../assets/react-omg.png"
 
+
+import { fadeInLeftVariant, fadeInRightVariant } from "../utils/Variants";
+
 const Showcase = () =>{
     return(
         <PaddingContainer
@@ -32,11 +36,18 @@ const Showcase = () =>{
            left="13%"
            right="10%"
            top="12%"
+           responsiveLeft="1rem"
+           responsiveRight="1rem"
+           responsiveTop="8rem"
            bottom="10%"
            >
             <FlexContainer align="left" fullWidthChild>
                 {/* --LEFT-CONTENT-- */}
-                <div>
+                <motion.div
+                    variants={fadeInLeftVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                >
                     {/* <Heading as="h4" size="h4">Hello!</Heading> */}
                     
                     
@@ -76,21 +87,31 @@ const Showcase = () =>{
 
 
                     <FlexContainer gap="1rem" >
+                        <a href="https://twitter.com/janardhannnnnn">
+                        <IconContainer color="blue" size="1.5rem">
+                            <BsTwitter/>
+                        </IconContainer>
+                        </a>
+
+                        <a href="https://www.instagram.com/janardhan.reddy.m.s/">
+                        <IconContainer color="blue" size="1.5rem">
+                            <BsInstagram/>
+                        </IconContainer>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/janardhan-reddy-ms/">
                         <IconContainer color="blue" size="1.5rem">
                              <BsLinkedin/>
                         </IconContainer>
 
-                        <IconContainer color="blue" size="1.5rem">
-                            <BsInstagram/>
-                        </IconContainer>
-
-                        <IconContainer color="blue" size="1.5rem">
-                            <BsTwitter/>
-                        </IconContainer>
-
+                        </a>
+                        
+                        <a href="https://github.com/JANARDHANAREDDYMS">
                         <IconContainer color="blue" size="1.5rem">
                             <BsGithub/>
                         </IconContainer>
+                        </a>
+                        
                     </FlexContainer>
 
                     <PaddingContainer top="1.5rem">
@@ -99,7 +120,11 @@ const Showcase = () =>{
                         R<BlueText>es</BlueText>ume
                         </Heading>
                         <PaddingContainer top="0.6rem" left="0.5rem">
-                        <IconContainer color="blue" size="1.8rem">
+                        <IconContainer 
+                        
+                        color="blue" 
+                        background-color="blue" 
+                        size="1.8rem">
                             <MdDownloadForOffline />
                         </IconContainer>
                         </PaddingContainer>
@@ -109,9 +134,14 @@ const Showcase = () =>{
                     </PaddingContainer>
                     
                     
-                </div>
+                </motion.div>
 
-                <FlexContainer justify="end" paddingBottom="28rem">
+                <FlexContainer 
+                as={motion.div}
+                variants={fadeInRightVariant}
+                initial="hidden"
+                whileInView="visible"
+                justify="end" paddingBottom="28rem">
                         <ShowcaseParticleContainer justify="end" >
                             <ShowcaseImageCard>
                             <img src={ShowcaseImg} alt="showcase"/>
@@ -119,6 +149,16 @@ const Showcase = () =>{
                             </ShowcaseImageCard>
 
                             <Particle
+                            as={motion.img}
+                            animate={{
+                                x:[0, 100, 0],
+                                rotate: -360,
+                                scale: [1, 0.5, 1],
+                            }}
+                            transition={{
+                                duration: 20,
+                                repeat: Infinity,
+                            }}
                             src={ReactImg}
                             alt="particle"
                             top="55px"
@@ -127,6 +167,16 @@ const Showcase = () =>{
                             rotate="60deg"/>
 
                         <Particle
+                            as={motion.img}
+                            animate={{
+                                x:[0, 100, 0],
+                                rotate: 360,
+                                scale: [1, 0.5, 1],
+                            }}
+                            transition={{
+                                duration: 20,
+                                repeat: Infinity,
+                            }}
                             src={BackgroundImg}
                             alt="particle"
                             top="35px"
@@ -134,6 +184,16 @@ const Showcase = () =>{
                             rotate="0deg"/>
 
                         <Particle
+                        as={motion.img}
+                        animate={{
+                            x:[100, 100, 0],
+                            rotate: -180,
+                            scale: [1, 1.5, 1],
+                        }}
+                        transition={{
+                            duration: 20,
+                            repeat: Infinity,
+                        }}
                         src={BackgroundImg}
                         alt="partcile"
                         top="35px"
@@ -141,6 +201,16 @@ const Showcase = () =>{
                         rotate="30deg"/>
 
                             <Particle
+                            as={motion.img}
+                            animate={{
+                                x:[0, 100, 100],
+                                rotate: -240,
+                                scale: [1.5, 0.5, 1],
+                            }}
+                            transition={{
+                                duration: 20,
+                                repeat: Infinity,
+                            }}
                             src={ReactImg}
                             alt="particle"
                             top="55px"

@@ -39,7 +39,7 @@ export const projectDetails = [
         tech_stack: ["Kotlin","Material UI"],
         project_img: Project1,
         project_url: "https://github.com/JANARDHANAREDDYMS/weather-app",
-        reverse: false
+        reverse: false,
 },
 {
     id: 1,
@@ -48,7 +48,7 @@ export const projectDetails = [
         tech_stack: ["Python","pynput"],
         project_img: Project2,
         project_url: "https://github.com/JANARDHANAREDDYMS/keylogger",
-        reverse: false
+        reverse: true,
 }
 ]
 

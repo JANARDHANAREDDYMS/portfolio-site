@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 import {
     PaddingContainer,
@@ -40,7 +41,10 @@ const  Navbar = () => {
         <NavbarContainer bgColor={sticky? theme.colors.primary : 'transparent'}>
             <PaddingContainer
             top='1.2rem'
-            bottom='1.2rem'>
+            bottom='1.2rem'
+            responsiveLeft="1rem"
+            responsiveRight="1rem"
+            >
                 <Container>
                     <FlexContainer justify="flex-end" responsiveFlex>
                         {/* <Logo>
@@ -48,6 +52,8 @@ const  Navbar = () => {
                         </Logo> */}
                         <PaddingContainer right="8.5rem">
                         <MenuIcon
+                        as={motion.a}
+                        whileHover={{scale: 1.2}}
                         onClick={()=>{setOpenMenu(true)}}>
                             <GiHamburgerMenu />
                         </MenuIcon>
@@ -55,7 +61,11 @@ const  Navbar = () => {
                         
                     </FlexContainer>
                 </Container>
-                {openMenu && <NavMenu setOpenMenu={setOpenMenu} />}
+
+                <AnimatePresence>
+                    {openMenu && <NavMenu setOpenMenu={setOpenMenu} />}
+                </AnimatePresence>
+                
             </PaddingContainer>
 
            

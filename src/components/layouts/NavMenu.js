@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { motion } from "framer-motion";
 
 import{
     PaddingContainer,
@@ -14,13 +15,19 @@ import {
 
 import { AiOutlineClose} from 'react-icons/ai';
 import { navLinks } from "../../utils/Data";
-
+import { slideInLeft } from "../../utils/Variants";
 
 const NavMenu =  ({setOpenMenu}) =>{
     
     console.log(setOpenMenu);
     return(
-        <NavMenuContainer>
+        <NavMenuContainer
+        as={motion.div}
+        variants={slideInLeft}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        >
             <PaddingContainer left="5%" right="5%" top="2rem">
                 <FlexContainer justify="flex-end" responsiveFlex>
                     <MenuIcon
@@ -39,6 +46,8 @@ const NavMenu =  ({setOpenMenu}) =>{
                         >
                             {navLinks.map((link)=>(
                                 <MenuItem 
+                                        as={motion.a}
+                                        whileHover={{scale:1.2}}
                                         key={link.id}
                                         href={`#${link.href}`}
                                         onClick={()=>setOpenMenu(false)}>

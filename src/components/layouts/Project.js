@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 
 import {
     PaddingContainer,
@@ -12,6 +12,8 @@ import {
 } from "../../styles/Global.styled"
 import { FaGithub } from "react-icons/fa";
 
+import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/Variants";
+
 import {
     TechStackCard
 } from "../../styles/MyProject.styled"
@@ -22,7 +24,9 @@ import { ProjectImageContainer,ProjectImage } from "../../styles/MyProject.style
 
 const Project = ({ data }) =>{
     return (
-    <FlexContainer fullWidthChild>
+    <FlexContainer 
+    direction={data.reverse ? 'row-reverse' : false}
+    fullWidthChild>
         <div>
             <FlexContainer align="center" gap="1rem">
                 <Heading as="h3" size="h3" bottom="1rem">
@@ -36,7 +40,11 @@ const Project = ({ data }) =>{
         
     
 
-    <PaddingContainer top="1rem">
+    <PaddingContainer top="1rem"
+    as={motion.div}
+    variants={fadeInLeftVariant}
+    initial="hidden"
+    whileInView="visible">
         <FlexContainer gap="1.5rem">
             {data.tech_stack.map((stack)=>(
                 <TechStackCard>{stack}</TechStackCard>
@@ -44,25 +52,31 @@ const Project = ({ data }) =>{
         </FlexContainer>
     </PaddingContainer>
     
-    <ParaText top="1rem " bottom="2rem">
+    <ParaText 
+    top="1rem " bottom="2rem"
+    as={motion.div}
+    variants={fadeInLeftVariant}
+    initial="hidden"
+    whileInView="visible"
+    >
         <WhiteText>{data.Project_desc}</WhiteText>
     </ParaText>
 
-    <Button>
+    <Button
+    as={motion.button}
+    whileHover={{scale:1.2}}>
         Find Code
     </Button>
     
     </div>
     <PaddingContainer right="20px">
-    <ProjectImageContainer justify="flex-end">
+
+    <ProjectImageContainer justify={data.reverse ? 'flex-start' : 'flex-end' }>
         <ProjectImage src={data.project_img} 
         alt={data.Project_name}
         href={data.project_url} />
     </ProjectImageContainer>
     </PaddingContainer>
-    
-    
-
     </FlexContainer>
     )
 }

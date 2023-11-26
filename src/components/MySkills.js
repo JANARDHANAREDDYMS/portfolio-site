@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import {
     FlexContainer,
     PaddingContainer,
@@ -16,6 +16,7 @@ import {
 } from '../styles/MySkills.styled'
 
 import { Skills } from "../utils/Data";
+import { fadeInLeftVariant,fadeInRightVariant } from "../utils/Variants";
 
 const MySkills = ()=>{
 
@@ -30,11 +31,19 @@ const MySkills = ()=>{
                 <FlexContainer 
                 responsiveFlex
                 resposive-direction="column-reverse"
-                fullWidthChild>
-                    <SkillsCardContainer>
+                fullWidthChild
+                >
+                    <SkillsCardContainer
+                    as={motion.div}
+                    variants={fadeInLeftVariant}
+                    initial="hidden"
+                    whileInView="visible">
                         {Skills.map((skill)=>(
-                            <SkillsCard>
-                                <IconContainer size="5rem" color="blue">
+                            <SkillsCard
+                            as={motion.div}
+                        whileHover={{scale:1.1}}>
+                                <IconContainer 
+                                size="5rem" color="blue">
                                     {skill.icon}
                                 </IconContainer>
                                 <Heading as="h4" size="h4">
@@ -49,7 +58,11 @@ const MySkills = ()=>{
 
 
 
-                    <div>
+                    <motion.div
+                    
+                    variants={fadeInRightVariant}
+                    initial="hidden"
+                    whileInView="visible">
 
                             <Heading as="h4" size="h4">
                                 MY SKILLS
@@ -68,7 +81,7 @@ const MySkills = ()=>{
                                 <WhiteText>This has helped to better work with MERN stack, thus making me closer to becoming a complete web devloper </WhiteText>
                             </ParaText>
 
-                    </div>
+                    </motion.div>
                 </FlexContainer>
             </PaddingContainer>
 
