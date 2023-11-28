@@ -7,7 +7,6 @@ import Project2 from "../assets/Project2.png"
 import Project3 from "../assets/Project3.png"
 import { TiHtml5 } from "react-icons/ti";
 import { BsFiletypeSql } from "react-icons/bs";
-import { Icon } from '@iconify/react';
 import { SiPytorch } from 'react-icons/si';
 
 
