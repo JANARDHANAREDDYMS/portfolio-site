@@ -33,7 +33,7 @@ const Info = () => {
             <PaddingContainer left="44%" bottom="2em">
                 <Heading size="h2" as="h2">About Me</Heading>
             </PaddingContainer>
-            <PaddingContainer bottom="2rem">
+            <PaddingContainer bottom="2.1rem">
             <div style={{ width: '60%', borderBottom: '2px solid white', marginBottom: '1rem',margin: 'auto'}}></div>
             </PaddingContainer>
             <PaddingContainer left="21rem">
