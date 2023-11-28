@@ -62,11 +62,13 @@ const Project = ({ data }) =>{
         <WhiteText>{data.Project_desc}</WhiteText>
     </ParaText>
 
+    <a href={data.project_url}>
     <Button
     as={motion.button}
     whileHover={{scale:1.2}}>
         Find Code
     </Button>
+    </a>
     
     </div>
     <PaddingContainer right="20px">
@@ -74,7 +76,7 @@ const Project = ({ data }) =>{
     <ProjectImageContainer justify={data.reverse ? 'flex-start' : 'flex-end' }>
         <ProjectImage src={data.project_img} 
         alt={data.Project_name}
-        href={data.project_url} />
+        />
     </ProjectImageContainer>
     </PaddingContainer>
     </FlexContainer>

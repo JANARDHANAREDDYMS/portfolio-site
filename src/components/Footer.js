@@ -7,20 +7,21 @@ import {
     BlueText,
     FlexContainer,
     Button,
-    ButtonMes
+    ButtonMes,
+    IconContainer,
+    ButtonMesContact,
+    DarkBlueText
 } from '../styles/Global.styled'
+
+import { MdOutlineMailOutline } from "react-icons/md";
 
 import { ContactForm,FormInput,FormLabel } from "../styles/Footer.styled";
 import { fadeInLeftVariant,fadeInRightVariant,fadeInTopVariant,fadeOutLeft1Variant,fadeOutLeftVariant,fadeOutRightVariant,fadeInNoVariant,fadeInBottomVariant} from "../utils/Variants";
 
 const Footer = () => {
     return(
-
-    <PaddingContainer 
-    id="contact"
-    top="5%"
-    bottom="1rem"
-    >
+        <PaddingContainer>
+    <PaddingContainer align="center">
         <Heading
         as={motion.h4}
         variants={fadeInTopVariant}
@@ -38,6 +39,19 @@ const Footer = () => {
         size="h2" align="center" top="0.5rem">
             Contact <BlueText> Me here</BlueText>
         </Heading>
+    </PaddingContainer>
+    <FlexContainer>
+
+   
+
+
+    <FlexContainer>
+    <PaddingContainer 
+    id="contact"
+    top="5%"
+    bottom="1rem"
+    >
+        
 
         <PaddingContainer top="3rem">
             <FlexContainer 
@@ -54,6 +68,7 @@ const Footer = () => {
                             </PaddingContainer>
                         <FormInput
                         type="text"
+                        name="name"
                         placeholder="Enter your name"
                         />
                         <PaddingContainer bottom="0.5rem" top="1rem">
@@ -62,6 +77,7 @@ const Footer = () => {
                         <FormInput
                         type="text"
                         placeholder="Enter your email"
+                        name="email"
                         />
                         <PaddingContainer bottom="0.5rem" top="1rem">
                             <FormLabel>Message: </FormLabel>
@@ -69,8 +85,9 @@ const Footer = () => {
                         <FormInput
                         as="textarea"
                         placeholder="Enter your message"
+                        name="message"
                         />
-                        <PaddingContainer top="2rem">
+                        <PaddingContainer top="2rem" right="13rem">
                         <FlexContainer justify="center" 
                         responsiveFlex>
                             <ButtonMes as={motion.button}
@@ -78,23 +95,33 @@ const Footer = () => {
                         </FlexContainer>
                         </PaddingContainer>
 
-                        <PaddingContainer top="12rem">
-                            <Heading as="h5" size="h5">
-                                This site is developed and maintained by<BlueText>Janardhana Reddy M S,</BlueText>
-                            can be reached out in case of 
-                            <PaddingContainer left="15rem">
-                                <Heading>
-                                any problems
-                                </Heading>
-                                </PaddingContainer></Heading>
-                        </PaddingContainer>
                         
                     </PaddingContainer>
                 </ContactForm>
+
+                <PaddingContainer  right="14rem">
+                        <FlexContainer justify="center" 
+                        responsiveFlex>
+                            <DarkBlueText style={{fontSize: "8rem"}}>LET'S TALK</DarkBlueText>
+                        </FlexContainer>
+                        </PaddingContainer>
             </FlexContainer>
-        </PaddingContainer>
+            
+
+        </PaddingContainer>  
+
+
+
+         
+
+
+
     </PaddingContainer>
-        )
+    </FlexContainer>
+    </FlexContainer>
+    
+    </PaddingContainer>
+    )
 }
 
 export default Footer

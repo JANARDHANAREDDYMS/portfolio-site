@@ -8,7 +8,10 @@ export const theme = {
         para_text_color:'#dcdcdc',
         orange:'#FF5733',
         gray: '#808080',
-        brownish_yellow: '#BAB178'
+        dark_blue: '#152842',
+        brownish_yellow: '#BAB178',
+        info_blue: '#1d3454',
+        info_hover_bg: '#627ca1'
     },
     fonts: {
         family: 'sans-serif', 

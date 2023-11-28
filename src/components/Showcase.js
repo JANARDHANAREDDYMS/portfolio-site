@@ -1,6 +1,7 @@
 import React from "react";
 import theme from "../utils/Theme";
 import { motion } from "framer-motion";
+import res from "../assets/janardhana-2.pdf"
 
 //import global styles
 import {
@@ -10,7 +11,8 @@ import {
     ParaText,
     BlueText,
     IconContainer,
-    WhiteText} from '../styles/Global.styled'
+    WhiteText,
+Buttona} from '../styles/Global.styled'
 
 //importing showcase styles
 
@@ -65,7 +67,7 @@ const Showcase = () =>{
                     size="h3"
                     >
                         <WhiteText>
-                        I'm a </WhiteText> <BlueText> Web Developer</BlueText>
+                        I'm a </WhiteText> <BlueText> Developer</BlueText>
                     </Heading>
 
                     
@@ -120,13 +122,20 @@ const Showcase = () =>{
                         R<BlueText>es</BlueText>ume
                         </Heading>
                         <PaddingContainer top="0.6rem" left="0.5rem">
-                        <IconContainer 
                         
+                        {/* <IconContainer 
                         color="blue" 
-                        background-color="blue" 
-                        size="1.8rem">
-                            <MdDownloadForOffline />
-                        </IconContainer>
+                        size="1.8rem"
+                        > */}
+                            <Buttona 
+                            color="white"
+                            size="1.8rem"
+                            href={res}
+                            download={res}>
+                                <MdDownloadForOffline />
+                            </Buttona>
+                            
+                        {/* </IconContainer> */}
                         </PaddingContainer>
                         
                     
@@ -148,7 +157,7 @@ const Showcase = () =>{
 
                             </ShowcaseImageCard>
 
-                            <Particle
+                            {/* <Particle
                             as={motion.img}
                             animate={{
                                 x:[0, 100, 0],
@@ -161,17 +170,19 @@ const Showcase = () =>{
                             }}
                             src={ReactImg}
                             alt="particle"
-                            top="55px"
+                            top="185px"
                             width="40px"
                             left="1150px"
-                            rotate="60deg"/>
+                            rotate="60deg"/> */}
 
                         <Particle
                             as={motion.img}
                             animate={{
-                                x:[0, 100, 0],
+                                x:[-120, 100, 0],
+                                y:[0,50,50],
                                 rotate: 360,
                                 scale: [1, 0.5, 1],
+                                opacity: 0.5
                             }}
                             transition={{
                                 duration: 20,
@@ -179,15 +190,16 @@ const Showcase = () =>{
                             }}
                             src={BackgroundImg}
                             alt="particle"
-                            top="35px"
+                            top="575px"
                             left="1100px"
                             rotate="0deg"/>
 
                         <Particle
                         as={motion.img}
                         animate={{
-                            x:[100, 100, 0],
-                            rotate: -180,
+                            x:[200, 0, 100],
+                            y: [0,-100,-50],
+                            rotate: -360,
                             scale: [1, 1.5, 1],
                         }}
                         transition={{
@@ -196,11 +208,11 @@ const Showcase = () =>{
                         }}
                         src={BackgroundImg}
                         alt="partcile"
-                        top="35px"
+                        top="235px"
                         left="1150px"
                         rotate="30deg"/>
 
-                            <Particle
+                            {/* <Particle
                             as={motion.img}
                             animate={{
                                 x:[0, 100, 100],
@@ -216,7 +228,7 @@ const Showcase = () =>{
                             top="55px"
                             width="60px"
                             left="1050px"
-                            rotate="120deg"/>
+                            rotate="120deg"/> */}
                         </ShowcaseParticleContainer>
                     </FlexContainer>
 

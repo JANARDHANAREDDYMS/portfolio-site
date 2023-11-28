@@ -31,7 +31,7 @@ const MySkills = ()=>{
                 <FlexContainer 
                 responsiveFlex
                 resposive-direction="column-reverse"
-                fullWidthChild
+                
                 >
                     <SkillsCardContainer
                     as={motion.div}
@@ -43,12 +43,19 @@ const MySkills = ()=>{
                             as={motion.div}
                         whileHover={{scale:1.1}}>
                                 <IconContainer 
-                                size="5rem" color="blue">
+                                size="2.5rem" color="blue">
                                     {skill.icon}
                                 </IconContainer>
-                                <Heading as="h4" size="h4">
+                                <Heading as="h5" size="h5">
                                     {skill.tech}
                                 </Heading>
+                                
+                                <div className="progress-bar">
+                                    <div className="progress-fill" style={{ width: `${skill.progress}%` }}></div>
+                                    <div className="progress-circle"></div>
+                                </div>
+                                
+                                
                             </SkillsCard>
                         ))}
                     </SkillsCardContainer>

@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./utils/Theme";
-import { MainBody, Container } from "./styles/Global.styled";
+import { MainBody, Container,LowerBody,LowerBodyInfo } from "./styles/Global.styled";
 
 
 //import componennts
@@ -11,6 +11,8 @@ import MySkills from "./components/MySkills"
 import MyProjects from "./components/MyProjects";
 import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";
+import LowerFooter from "./components/LowerFooter"
+import Info from "./components/Bginfo";
 
 
 function App() {
@@ -19,13 +21,21 @@ function App() {
         <MainBody>
           <Navbar />
           <Container>
-
             <Showcase/>
-            <MySkills />
+          </Container>
+          
+              <Info />
+          <Container>
+          <MySkills />
             <MyProjects />
             <Footer />
           </Container>
+            
+          
         </MainBody>
+        <LowerBody>
+          <LowerFooter />
+        </LowerBody>
         
       </ThemeProvider>
 

@@ -4,6 +4,13 @@ export const MainBody = styled.div`
     background-color:${({theme})=> theme.colors.primary}
 `;
 
+export const LowerBody = styled.div`
+    background-color:${({theme})=>theme.colors.secondary},
+    
+`;
+
+
+
 export const Container = styled.div`
     width:90%,
     max-width:1280px,
@@ -64,8 +71,9 @@ export const Heading = styled(PaddingContainer)`
             case 'h3':
                 return '2rem';
             case 'h4':
-                return '1.2rem'
-
+                return '1.2rem';
+            case 'h5':
+                return '1rem';
             default:
                 return;
         }
@@ -89,12 +97,37 @@ mobile}){
                 return;
         }
     }};
-    font-family: Outfit, sans-serif;
+    font-family: Outfit, sans-serif-monospace;
 }
 `;
 
 export const BlueText =  styled.span`
     color:${({theme})=>theme.colors.secondary}
+
+`
+
+export const DarkBlueText =  styled.span`
+    color:${({theme})=>theme.colors.dark_blue}
+`
+
+export const BYText =  styled.span`
+    color:${({theme})=>theme.colors.brownish_yellow}
+    font-size: ${({size})=>{
+        switch(size){
+            case 'h1':
+                return '89.5rem';
+            case 'h2':
+                return '3rem';
+            case 'h3':
+                return '2rem';
+            case 'h4':
+                return '1.2rem';
+            case 'h5':
+                return '1rem';
+            default:
+                return;
+        }
+    }};
 `
 
 export const ParaText = styled(PaddingContainer)`
@@ -115,11 +148,34 @@ export const IconContainer = styled.div`
 
             case 'blue':
                 return theme.colors.secondary;
-            
+            case 'dark-blue':
+                return theme.colors.dark_blue;
             default:
                 return
         }
     }}
+`
+
+export const Buttona = styled.a`
+font-size:${({size})=>size};
+cursor: pointer;
+color: ${({color, theme})=>{
+    switch(color){
+        case 'white':
+            return theme.colors.white;
+
+        case 'blue':
+            return theme.colors.secondary;
+        
+        default:
+            return
+    }
+}}
+
+&:visited{
+    color:inherit;
+}
+
 `
 
 export const Button = styled.a`
@@ -138,9 +194,44 @@ export const Button = styled.a`
         background-color:${({theme})=>theme.colors.white};
     }
 `
+
+export const Buttoninfo = styled.a`
+    display: inline-block;
+    width: max_content;
+    color:${({theme})=>theme.colors.white};
+    background-color:${({theme})=>theme.colors.primary_light};
+    
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+    
+    &:hover{
+        color:${({theme})=>theme.colors.white};
+        background-color:${({theme})=>theme.colors.info_hover_bg};
+    }
+`
+
 export const ButtonMes = styled.a`
     display: inline-block;
     width: max_content;
+    padding: 1rem 2rem;
+    color:${({theme})=>theme.colors.white};
+    background-color:${({theme})=>theme.colors.brownish_yellow};
+    border: 1px solid ${({theme})=>theme.colors.brownish_yellow};
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+    
+    &:hover{
+        color:${({theme})=>theme.colors.primary_light};
+        background-color:${({theme})=>theme.colors.white};
+    }
+`
+
+export const ButtonMesContact = styled.a`
+    display: inline-block;
+    width: 10rem;
+    height: 8rem;
     padding: 1rem 2rem;
     color:${({theme})=>theme.colors.white};
     background-color:${({theme})=>theme.colors.brownish_yellow};

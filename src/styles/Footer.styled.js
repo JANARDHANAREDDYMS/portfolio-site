@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ContactForm = styled.form`
-    width: 40%;
-
+    width: 100%;
+    padding-left:13rem;
 
     @media(max-width: ${({theme})=>theme.breakpoints.
     mobile}){
@@ -18,7 +18,7 @@ export const FormLabel = styled.p`
 `
 
 export const FormInput = styled.input`
-    width: 100%;
+    width: 32rem;
     background-color: ${({theme})=>theme.colors.primary_light};
     border: 1px solid ${({theme})=>theme.colors.para_text_color};
     color: ${({theme})=>theme.colors.para_text_color};
