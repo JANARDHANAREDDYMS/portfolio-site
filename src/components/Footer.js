@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 import { motion } from "framer-motion";
 
 import {
@@ -18,9 +20,27 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { ContactForm,FormInput,FormLabel } from "../styles/Footer.styled";
 import { fadeInLeftVariant,fadeInRightVariant,fadeInTopVariant,fadeOutLeft1Variant,fadeOutLeftVariant,fadeOutRightVariant,fadeInNoVariant,fadeInBottomVariant} from "../utils/Variants";
 
-const Footer = () => {
-    return(
-        <PaddingContainer>
+
+
+
+
+
+export const Footer = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_a545fjk', 'template_cb1wu66', form.current, 'oStz5vh9YZQopYV23')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  return (
+    <PaddingContainer>
     <PaddingContainer align="center">
         <Heading
         as={motion.h4}
@@ -60,7 +80,7 @@ const Footer = () => {
             initial="hidden"
             whileInView="visible"
             size="h4"justify="center">
-                <ContactForm class="contact" action="https://formsubmit.co/hibyemailid@gmail.com" method="POST">
+                <ContactForm class="contact" >
                     <PaddingContainer bottom="3rem">
                         
                         <PaddingContainer bottom="0.5rem" >
@@ -106,22 +126,13 @@ const Footer = () => {
                         </FlexContainer>
                         </PaddingContainer>
             </FlexContainer>
-            
-
         </PaddingContainer>  
-
-
-
-         
-
-
-
     </PaddingContainer>
     </FlexContainer>
     </FlexContainer>
     
     </PaddingContainer>
-    )
-}
+  );
+};
 
 export default Footer

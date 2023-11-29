@@ -37,7 +37,7 @@ const Info = () => {
             <div style={{ width: '60%', borderBottom: '2px solid white', marginBottom: '1rem',margin: 'auto'}}></div>
             </PaddingContainer>
             <PaddingContainer left="21rem">
-            <FlexContainer align="center" gap="2rem">
+            <FlexContainer align="center" gap="2rem" resposiveFlex>
                 <Buttoninfo style={{width:'15rem'}}>
                 <LowerBodyInfo><InfoContainer>
                 <ParaText style={{paddingBottom:"1rem",fontSize:'1.2rem'}}>Education</ParaText>

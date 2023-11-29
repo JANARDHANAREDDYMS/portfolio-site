@@ -3,6 +3,11 @@ import styled from "styled-components"
 export const ShowcaseParticleContainer = styled.div`
     postion:relative;
     max-width:300px;
+
+    @media(max-width: ${({theme})=>theme.
+    breakpoints.mobile}){
+        display: none;
+    }
 `
 
 export const ShowcaseImageCard = styled.div`
@@ -17,7 +22,11 @@ export const ShowcaseImageCard = styled.div`
         width: 300px; // Set the desired width
         height: auto; // Set height to "auto" to maintain aspect ratio
     }
-
+    @media(max-width: ${({theme})=>theme.
+    breakpoints.mobile}){
+        width: 150px;
+        height: auto;
+    }
 
    
 `;
