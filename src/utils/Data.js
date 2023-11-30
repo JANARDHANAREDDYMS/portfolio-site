@@ -1,4 +1,7 @@
 import { FaReact, FaNode, FaCss3Alt,FaJava,FaPython}  from 'react-icons/fa';
+import { FaFontAwesomeIcon } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 import { SiJavascript} from 'react-icons/si';
 
@@ -13,7 +16,7 @@ import { SiPytorch } from 'react-icons/si';
 export const Skills = [
     {
         id:0,
-        tech: 'React 35',
+        tech: 'React JS',
         icon: <FaReact />,
         progress: 70,
     },
@@ -40,7 +43,7 @@ export const Skills = [
     },
     {
         id: 4,
-        tech: 'Node 35',
+        tech: 'Node JS',
         icon: <FaNode />,
         progress: 70,
     },
@@ -70,10 +73,10 @@ export const Skills = [
         progress: 20
     },
     {
-        id: '',
-        tech: '',
-        icon:'',
-        progress: ''
+        id: '9',
+        tech: 'C',
+        icon:<FontAwesomeIcon icon="fa-solid fa-c" />,
+        progress: '80'
     }
 
 ]
@@ -132,3 +135,18 @@ export const navLinks = [
         href: 'contact'
     }
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
