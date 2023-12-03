@@ -39,7 +39,7 @@ export const SkillsCardContainer = styled.div`
     @media(max-width: ${({theme})=>theme.breakpoints.
     mobile}){
         display:grid;
-        padding: 0;
+        padding: 0 5%;
         grid-template-columns:repeat(2, 1fr);
         grid-template-rows: repeat(5, auto);
 
