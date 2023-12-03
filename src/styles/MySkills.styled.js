@@ -77,8 +77,8 @@ export const SkillsCard = styled.div`
     mobile}){
         width: 100%;
         margin-top: 2rem;
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
 
     }
 `
