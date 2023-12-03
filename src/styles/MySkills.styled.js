@@ -38,8 +38,27 @@ export const SkillsCardContainer = styled.div`
 
     @media(max-width: ${({theme})=>theme.breakpoints.
     mobile}){
-        display:block;
+        display:grid;
         padding: 0;
+        grid-template-columns:repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+
+        .progress-bar {
+            width: 70%;
+            height: 7px;
+            background-color: #eee;
+            border-radius: 5px;
+            margin-top: 6px;
+            position: relative;
+            
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 5px;
+            background-color: #007bff; /* Change this color as needed */
+        }
+
     }
 `
 
