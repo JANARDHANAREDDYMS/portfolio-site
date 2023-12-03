@@ -40,8 +40,8 @@ export const SkillsCardContainer = styled.div`
     mobile}){
         display:grid;
         padding: 0;
-        grid-template-columns:repeat(5, 1fr);
-        grid-template-rows: repeat(2, auto);
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
 
         .progress-bar {
             width: 70%;
