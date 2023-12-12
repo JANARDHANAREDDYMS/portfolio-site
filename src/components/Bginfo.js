@@ -28,7 +28,7 @@ import {
 const Info = () => {
     return(
 
-        <PaddingContainer top="8%" bottom="10%">
+        <PaddingContainer top="8%" bottom="10%" responsieLeft="1rem">
 
             <PaddingContainer left="44%" bottom="2em">
                 <Heading size="h2" as="h2">About Me</Heading>
