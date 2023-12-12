@@ -30,8 +30,7 @@ const MySkills = ()=>{
             >
                 <FlexContainer 
                 responsiveFlex
-                resposive-direction="column-reverse"
-                
+                // resposive-direction="column-reverse"
                 >
                     <SkillsCardContainer
                     as={motion.div}

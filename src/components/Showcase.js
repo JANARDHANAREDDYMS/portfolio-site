@@ -88,7 +88,7 @@ const Showcase = () =>{
                     </ParaText>
 
 
-                    <FlexContainer gap="1rem" >
+                    <FlexContainer gap="1rem" responsiveFlex>
                         <a href="https://twitter.com/janardhannnnnn">
                         <IconContainer color="blue" size="1.5rem">
                             <BsTwitter/>

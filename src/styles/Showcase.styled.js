@@ -6,7 +6,9 @@ export const ShowcaseParticleContainer = styled.div`
 
     @media(max-width: ${({theme})=>theme.
     breakpoints.mobile}){
-        display: none;
+        // display: none;
+        padding-left: 20%;
+        
     }
 `
 
@@ -24,8 +26,9 @@ export const ShowcaseImageCard = styled.div`
     }
     @media(max-width: ${({theme})=>theme.
     breakpoints.mobile}){
-        width: 150px;
+        width: 300px;
         height: auto;
+        
     }
 
    
