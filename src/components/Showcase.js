@@ -119,7 +119,7 @@ const Showcase = () =>{
                     <PaddingContainer top="1.5rem">
                         <FlexContainer>
                         <Heading as="h3" size="h3">
-                        R<BlueText>es</BlueText>ume
+                        Ciriculum<BlueText>Vi</BlueText>tae
                         </Heading>
                         <PaddingContainer top="0.6rem" left="0.5rem">
                         
