@@ -8,6 +8,7 @@ import { SiJavascript} from 'react-icons/si';
 import Project1 from "../assets/project1.jpg"
 import Project2 from "../assets/Project2.png"
 import Project3 from "../assets/Project3.png"
+import Project4 from "../assets/Project4.jpg"
 import { TiHtml5 } from "react-icons/ti";
 import { BsFiletypeSql } from "react-icons/bs";
 import { SiPytorch } from 'react-icons/si';
@@ -110,6 +111,15 @@ export const projectDetails = [
     project_img: Project3,
     project_url: "https://github.com/JANARDHANAREDDYMS/DBMS-PROJECT.git",
     reverse: false,
+},
+{
+    id: 3,
+    Project_name:"Automated Lane Detection System",
+    Project_desc: "An automated lane detection system using open source libraries like OpenCV,NumPy,Pandas. The system uses the principles of Hough Transform for lane detection using up vote technique",
+    tech_stack: ["Python","OpenCv"],
+    project_img: Project4,
+    project_url: "https://github.com/JANARDHANAREDDYMS/LANEDETECTION.git",
+    reverse: true,
 }
 ]
 
