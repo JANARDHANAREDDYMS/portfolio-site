@@ -151,7 +151,7 @@ const Showcase = () =>{
                 initial="hidden"
                 whileInView="visible"
                 justify="end" paddingBottom="28rem">
-                        <ShowcaseParticleContainer justify="end" >
+                        <ShowcaseParticleContainer justify="end" responsiveRight="5rem">
                             <ShowcaseImageCard>
                             <img src={ShowcaseImg} alt="showcase"/>
 
