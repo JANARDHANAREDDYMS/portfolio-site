@@ -12,7 +12,7 @@ import Project4 from "../assets/Project4.jpg"
 import { TiHtml5 } from "react-icons/ti";
 import { BsFiletypeSql } from "react-icons/bs";
 import { SiPytorch } from 'react-icons/si';
-
+import { SiMusicbrainz } from "react-icons/si";
 
 export const Skills = [
     {
@@ -74,10 +74,10 @@ export const Skills = [
         progress: 20
     },
     {
-        id: '9',
-        tech: 'C',
-        icon:<FontAwesomeIcon icon="fa-solid fa-c" />,
-        progress: '80'
+        id: '10',
+        tech: 'Deep Learning',
+        icon:<SiMusicbrainz />,
+        progress: '40'
     }
 
 ]
