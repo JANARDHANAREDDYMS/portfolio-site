@@ -18,6 +18,7 @@ import {
 import { Skills } from "../utils/Data";
 import { fadeInLeftVariant,fadeInRightVariant } from "../utils/Variants";
 
+
 const MySkills = ()=>{
 
     return(

@@ -145,7 +145,6 @@ export const IconContainer = styled.div`
         switch(color){
             case 'white':
                 return theme.colors.white;
-
             case 'blue':
                 return theme.colors.secondary;
             case 'dark-blue':

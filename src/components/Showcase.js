@@ -2,6 +2,12 @@ import React from "react";
 import theme from "../utils/Theme";
 import { motion } from "framer-motion";
 import res from "../assets/janardhana-2.pdf"
+import lwr from "../assets/lwr.txt"
+import knn from "../assets/knn.txt"
+import em from '../assets/em.txt'
+import kmeans from '../assets/kmeans.txt'
+import nb from '../assets/naivebayes.txt'
+import ann from '../assets/ann.txt'
 
 //import global styles
 import {
@@ -13,6 +19,10 @@ import {
     IconContainer,
     WhiteText,
 Buttona} from '../styles/Global.styled'
+import{
+    SkillsCardContainer,
+    SkillsCard
+} from '../styles/MySkills.styled'
 
 //importing showcase styles
 
@@ -53,6 +63,112 @@ const Showcase = () =>{
                     {/* <Heading as="h4" size="h4">Hello!</Heading> */}
                     
                     
+                        <FlexContainer>
+                        
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                            <SkillsCard style={{ width: '60px' , height: '60px' }}>
+                                <Buttona 
+                            size="1.8rem"
+                            href={lwr}
+                            download={lwr}>
+                                <Heading>1</Heading>
+                            </Buttona>
+                                </SkillsCard>
+                        </PaddingContainer>
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
+                                <Buttona 
+                            size="1.8rem"
+                            href={lwr}
+                            download={lwr}>
+                                <Heading>2</Heading>
+                            </Buttona>
+                                </SkillsCard>
+                        </PaddingContainer>
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
+                                <Buttona 
+                            size="1.8rem"
+                            href={lwr}
+                            download={lwr}>
+                                <Heading>3</Heading>
+                            </Buttona>
+                                </SkillsCard>                        
+                        </PaddingContainer>
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
+                                <Buttona 
+                            size="1.8rem"
+                            href={lwr}
+                            download={lwr}>
+                                <Heading>4</Heading>
+                            </Buttona>
+                                </SkillsCard>                        
+                        </PaddingContainer>
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
+                                <Buttona 
+                            size="1.8rem"
+                            href={ann}
+                            download={ann}>
+                                <Heading>5</Heading>
+                            </Buttona>
+                                </SkillsCard>                        
+                        </PaddingContainer>
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
+                                <Buttona 
+                            size="1.8rem"
+                            href={nb}
+                            download={nb}>
+                                <Heading>6</Heading>
+                            </Buttona>
+                                </SkillsCard>                        
+                        </PaddingContainer>
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
+                                <Buttona 
+                            size="1.8rem"
+                            href={kmeans}
+                            download={kmeans}>
+                                <Heading>7.1</Heading>
+                            </Buttona>
+                                </SkillsCard>                        
+                        </PaddingContainer>
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
+                                <Buttona 
+                            size="1.8rem"
+                            href={em}
+                            download={em}>
+                                <Heading>7.2</Heading>
+                            </Buttona>
+                                </SkillsCard>                        
+                        </PaddingContainer>
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
+                                <Buttona 
+                            size="1.8rem"
+                            href={knn}
+                            download={knn}>
+                                <Heading>8</Heading>
+                            </Buttona>
+                                </SkillsCard>                        
+                        </PaddingContainer>
+                        <PaddingContainer top="0.6rem" left="0.5rem">
+                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
+                                <Buttona 
+                            size="1.8rem"
+                            href={lwr}
+                            download={lwr}>
+                                <Heading>9</Heading>
+                            </Buttona>
+                                </SkillsCard>                        
+                        </PaddingContainer>
+
+                        </FlexContainer>
+                        
+                        
                     <Heading as="h2" size="h2" top="0.5rem" bottom="0.5rem"  color={theme.colors.para_text_color} align="left">
                     <WhiteText>
                         I'm </WhiteText><BlueText> Janardhan</BlueText>    
@@ -122,20 +238,17 @@ const Showcase = () =>{
                         Curriculum<BlueText>&nbsp;Vi</BlueText>tae
                         </Heading>
                         <PaddingContainer top="0.6rem" left="0.5rem">
-                        
-                        {/* <IconContainer 
-                        color="blue" 
+                        <IconContainer 
+                        color="dark-blue" 
                         size="1.8rem"
-                        > */}
+                        > 
                             <Buttona 
-                            color="white"
                             size="1.8rem"
-                            href={res}
-                            download={res}>
+                            href={lwr}
+                            download={lwr}>
                                 <MdDownloadForOffline />
-                            </Buttona>
-                            
-                        {/* </IconContainer> */}
+                            </Buttona>    
+                        </IconContainer>
                         </PaddingContainer>
                         
                     

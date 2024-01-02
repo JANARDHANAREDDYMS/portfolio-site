@@ -53,19 +53,28 @@ export const LowerFooter=()=>{
             
         <PaddingContainer top="1.5rem" left="37.7rem">
         <FlexContainer align="center" gap="1rem" >
-                <IconContainer size="2rem">
+        <a href="https://twitter.com/janardhannnnnn">
+                <IconContainer size="2rem" color="dark-blue">
                     <AiOutlineInstagram />
                 </IconContainer>
-                <IconContainer size="2rem">
+        </a>
+        <a href="https://twitter.com/janardhannnnnn">   
+                <IconContainer size="2rem" color="dark-blue">
                     <AiOutlineTwitter />
                 </IconContainer>
-                <IconContainer size="2rem">
+        </a>
+        <a href="https://github.com/JANARDHANAREDDYMS" >
+                <IconContainer size="2rem" color="dark-blue">
                     <AiOutlineGithub />
                 </IconContainer>
-                <IconContainer size="2rem">
+                </a>
+                <a href="https://www.linkedin.com/in/janardhan-reddy-ms/">
+                <IconContainer size="2rem" color="dark-blue">
                     <AiOutlineLinkedin />
                 </IconContainer>
-                <IconContainer size="2rem">
+                </a>
+            
+                <IconContainer size="2rem" >
                     <MdOutlineMailOutline />
                 </IconContainer>
             </FlexContainer>
