@@ -47,3 +47,4 @@ for i in range(len(test)):
 print('\nActual Values : ', list(test[test.columns[-1]]))
 print('Predicted : ', prediction)
 print('Accuracy : ', right_prediction / len(test))
+
