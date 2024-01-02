@@ -8,6 +8,11 @@ import em from '../assets/em.txt'
 import kmeans from '../assets/kmeans.txt'
 import nb from '../assets/naivebayes.txt'
 import ann from '../assets/ann.txt'
+import id3 from '../assets/id3.txt'
+import cm from '../assets/cm.txt'
+import aostar from '../assets/aostar.txt'
+import astar from '../assets/astar.txt'
+
 
 //import global styles
 import {
@@ -69,8 +74,8 @@ const Showcase = () =>{
                             <SkillsCard style={{ width: '60px' , height: '60px' }}>
                                 <Buttona 
                             size="1.8rem"
-                            href={lwr}
-                            download={lwr}>
+                            href={aostar}
+                            download={aostar}>
                                 <Heading>1</Heading>
                             </Buttona>
                                 </SkillsCard>
@@ -79,8 +84,8 @@ const Showcase = () =>{
                                 <SkillsCard style={{ width: '60px' , height: '60px' }}>
                                 <Buttona 
                             size="1.8rem"
-                            href={lwr}
-                            download={lwr}>
+                            href={astar}
+                            download={astar}>
                                 <Heading>2</Heading>
                             </Buttona>
                                 </SkillsCard>
@@ -89,8 +94,8 @@ const Showcase = () =>{
                                 <SkillsCard style={{ width: '60px' , height: '60px' }}>
                                 <Buttona 
                             size="1.8rem"
-                            href={lwr}
-                            download={lwr}>
+                            href={cm}
+                            download={cm}>
                                 <Heading>3</Heading>
                             </Buttona>
                                 </SkillsCard>                        
@@ -99,8 +104,8 @@ const Showcase = () =>{
                                 <SkillsCard style={{ width: '60px' , height: '60px' }}>
                                 <Buttona 
                             size="1.8rem"
-                            href={lwr}
-                            download={lwr}>
+                            href={id3}
+                            download={id3}>
                                 <Heading>4</Heading>
                             </Buttona>
                                 </SkillsCard>                        
@@ -265,10 +270,13 @@ const Showcase = () =>{
                 whileInView="visible"
                 justify="end" paddingBottom="28rem">
                         <ShowcaseParticleContainer justify="end" responsiveRight="5rem">
+                            <PaddingContainer top="6rem">
                             <ShowcaseImageCard>
                             <img src={ShowcaseImg} alt="showcase"/>
 
                             </ShowcaseImageCard>
+                            </PaddingContainer>
+                            
 
                             {/* <Particle
                             as={motion.img}
