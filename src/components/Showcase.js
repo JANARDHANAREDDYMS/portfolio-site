@@ -68,110 +68,7 @@ const Showcase = () =>{
                     {/* <Heading as="h4" size="h4">Hello!</Heading> */}
                     
                     
-                        <FlexContainer>
                         
-                        <PaddingContainer top="0.6rem" left="0.5rem">
-                            <SkillsCard style={{ width: '60px' , height: '60px' }}>
-                                <Buttona 
-                            size="1.8rem"
-                            href={aostar}
-                            download={aostar}>
-                                <Heading>1</Heading>
-                            </Buttona>
-                                </SkillsCard>
-                        </PaddingContainer>
-                        <PaddingContainer top="0.6rem" left="0.5rem">
-                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
-                                <Buttona 
-                            size="1.8rem"
-                            href={astar}
-                            download={astar}>
-                                <Heading>2</Heading>
-                            </Buttona>
-                                </SkillsCard>
-                        </PaddingContainer>
-                        <PaddingContainer top="0.6rem" left="0.5rem">
-                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
-                                <Buttona 
-                            size="1.8rem"
-                            href={cm}
-                            download={cm}>
-                                <Heading>3</Heading>
-                            </Buttona>
-                                </SkillsCard>                        
-                        </PaddingContainer>
-                        <PaddingContainer top="0.6rem" left="0.5rem">
-                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
-                                <Buttona 
-                            size="1.8rem"
-                            href={id3}
-                            download={id3}>
-                                <Heading>4</Heading>
-                            </Buttona>
-                                </SkillsCard>                        
-                        </PaddingContainer>
-                        <PaddingContainer top="0.6rem" left="0.5rem">
-                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
-                                <Buttona 
-                            size="1.8rem"
-                            href={ann}
-                            download={ann}>
-                                <Heading>5</Heading>
-                            </Buttona>
-                                </SkillsCard>                        
-                        </PaddingContainer>
-                        <PaddingContainer top="0.6rem" left="0.5rem">
-                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
-                                <Buttona 
-                            size="1.8rem"
-                            href={nb}
-                            download={nb}>
-                                <Heading>6</Heading>
-                            </Buttona>
-                                </SkillsCard>                        
-                        </PaddingContainer>
-                        <PaddingContainer top="0.6rem" left="0.5rem">
-                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
-                                <Buttona 
-                            size="1.8rem"
-                            href={kmeans}
-                            download={kmeans}>
-                                <Heading>7.1</Heading>
-                            </Buttona>
-                                </SkillsCard>                        
-                        </PaddingContainer>
-                        <PaddingContainer top="0.6rem" left="0.5rem">
-                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
-                                <Buttona 
-                            size="1.8rem"
-                            href={em}
-                            download={em}>
-                                <Heading>7.2</Heading>
-                            </Buttona>
-                                </SkillsCard>                        
-                        </PaddingContainer>
-                        <PaddingContainer top="0.6rem" left="0.5rem">
-                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
-                                <Buttona 
-                            size="1.8rem"
-                            href={knn}
-                            download={knn}>
-                                <Heading>8</Heading>
-                            </Buttona>
-                                </SkillsCard>                        
-                        </PaddingContainer>
-                        <PaddingContainer top="0.6rem" left="0.5rem">
-                                <SkillsCard style={{ width: '60px' , height: '60px' }}>
-                                <Buttona 
-                            size="1.8rem"
-                            href={lwr}
-                            download={lwr}>
-                                <Heading>9</Heading>
-                            </Buttona>
-                                </SkillsCard>                        
-                        </PaddingContainer>
-
-                        </FlexContainer>
                         
                         
                     <Heading as="h2" size="h2" top="0.5rem" bottom="0.5rem"  color={theme.colors.para_text_color} align="left">
@@ -249,8 +146,8 @@ const Showcase = () =>{
                         > 
                             <Buttona 
                             size="1.8rem"
-                            href={lwr}
-                            download={lwr}>
+                            href={res}
+                            download={res}>
                                 <MdDownloadForOffline />
                             </Buttona>    
                         </IconContainer>
