@@ -167,7 +167,7 @@ const Showcase = () =>{
                 whileInView="visible"
                 justify="end" paddingBottom="28rem">
                         <ShowcaseParticleContainer justify="end" responsiveRight="5rem">
-                            <PaddingContainer top="6rem">
+                            <PaddingContainer>
                             <ShowcaseImageCard>
                             <img src={ShowcaseImg} alt="showcase"/>
 
