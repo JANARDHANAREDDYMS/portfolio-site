@@ -22,7 +22,7 @@ export const theme = {
         }
     },
     breakpoints:{
-        mobile:'1400px',
+        mobile:'900px',
 
     }
 }
