@@ -13,14 +13,17 @@ export const ShowcaseParticleContainer = styled.div`
 `
 
 export const ShowcaseImageCard = styled.div`
-    border: 7px solid white;
+
+    border: 10px solid white;
     width: max-content;
+    height: 370px;
     
     border-radius: 4rem;
     position: relative;
     overflow:hidden;
     
     img {
+
         width: 300px; // Set the desired width
         height: auto; // Set height to "auto" to maintain aspect ratio
     }
