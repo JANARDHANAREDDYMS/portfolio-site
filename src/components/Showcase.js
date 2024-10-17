@@ -91,7 +91,7 @@ const Showcase = () =>{
 
                     <ParaText as="div" top="2rem" bottom="4rem">
                         <p style={{ paddingRight: "1rem" }}>
-                            <BlueText>I am Janardhana Reddy currently pursuing my grad school in</BlueText>
+                            <BlueText>I am Janardhana Reddy currently pursuing my Masters in</BlueText>
                         </p>
                         <p style={{ paddingRight: "1rem" }}>
                             <BlueText>Computer Science from New York University.</BlueText>
