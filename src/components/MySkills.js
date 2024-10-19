@@ -59,12 +59,12 @@ const MySkills = ()=>{
                             </SkillsCard>
                         ))}
                     </SkillsCardContainer>
-
+                    
 
 {/* right-section */}
 
 
-
+                        
                     <motion.div
                     
                     variants={fadeInRightVariant}
@@ -90,6 +90,7 @@ const MySkills = ()=>{
 
                     </motion.div>
                 </FlexContainer>
+                
             </PaddingContainer>
 
         )

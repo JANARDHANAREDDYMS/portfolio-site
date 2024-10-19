@@ -96,11 +96,11 @@ export const projectDetails = [
 },
 {
     id: 1,
-        Project_name:" Key Logger",
-        Project_desc: " A keylogger is a type of malicious software designed to secretly record and monitor keystrokes on a computer or mobile device. It can capture sensitive information such as usernames, passwords, and credit card details, posing a significant threat to user privacy and security. Cybercriminals often use keyloggers to steal personal data and carry out unauthorized activities, making them a serious concern for cybersecurity.",
-        tech_stack: ["Python","pynput"],
+        Project_name:" Crowd Management using Deep Learning",
+        Project_desc: "A deep learning system was developed developed using fine tuning and adjusting hyperparameters for YOLOv8. Also made use of Automated Homography techniques to map 2d cordinates into 3d space for much better accuracy. A dynamic heatmap was generated that can aid law enforcement is managing and analysing the crowd ",
+        tech_stack: ["Python"],
         project_img: Project2,
-        project_url: "https://github.com/JANARDHANAREDDYMS/keylogger.git",
+        project_url: "https://github.com/JANARDHANAREDDYMS/yoloposemodel.git",
         reverse: true,
 },
 {
