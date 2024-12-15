@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aa9597cb.css",
+    "main.js": "/static/js/main.f4f0aec7.js",
+    "static/media/Project2.png": "/static/media/Project2.6bd21945fb6ea661d9a3.png",
+    "static/media/showcase-img.jpg": "/static/media/showcase-img.f7dc4481ba4d862c3c99.jpg",
+    "static/media/janardhana-2.pdf": "/static/media/janardhana-2.d63389fe42686ca0e8bd.pdf",
+    "static/media/react-omg.png": "/static/media/react-omg.496f4dbc98d8ad9aaa89.png",
+    "static/media/Project3.png": "/static/media/Project3.f1cf9ab66e1fc9155f02.png",
+    "static/media/project1.jpg": "/static/media/project1.c4bc6002046999ef15b1.jpg",
+    "index.html": "/index.html",
+    "main.aa9597cb.css.map": "/static/css/main.aa9597cb.css.map",
+    "main.f4f0aec7.js.map": "/static/js/main.f4f0aec7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa9597cb.css",
+    "static/js/main.f4f0aec7.js"
+  ]
+}
